@@ -18,14 +18,14 @@ export default async function EnsNameServer() {
   return (
     <div className="p-4 rounded-lg shadow-md">
       <h2 className="text-xl font-bold mb-4">ENS Name Resolution (Server)</h2>
-      {ensName ? (
+      {ensName && (
         <p className="text-green-600">
-          ENS Name: <span className="font-semibold">{ensName}</span>
+          ENS Name:{" "}
+          <span className="font-semibold">
+            {ensName ? ensName : "No ENS name found for this address"}
+          </span>
         </p>
-      ) : (
-        <p className="text-yellow-600">No ENS name found for this address</p>
       )}
-      <p className="mt-2 text-sm text-gray-500">Address: {address}</p>
     </div>
   );
 }

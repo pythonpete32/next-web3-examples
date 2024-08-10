@@ -11,6 +11,6 @@ export const serverConfig = createConfig({
 
 declare module "wagmi" {
   interface Register {
-    config: typeof serverConfig;
+    serverConfig: typeof serverConfig;
   }
 }
