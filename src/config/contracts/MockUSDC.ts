@@ -1,5 +1,5 @@
 export default {
-  address: "0x9EfEE50bea4E83447D4c0DC7c4723F1940400B8C",
+  address: "0x9EfEE50bea4E83447D4c0DC7c4723F1940400B8C" as `0x${string}`,
   network: "sepolia",
   networkId: 11155111,
   abi: [

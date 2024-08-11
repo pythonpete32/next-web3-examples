@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { FC, PropsWithChildren, useEffect, useState } from "react";
 import { WagmiProvider } from "wagmi";
 import { ConnectKitProvider } from "connectkit";
+import { ThemeProvider } from "next-themes";
 
 const queryClient = new QueryClient();
 
@@ -16,11 +17,17 @@ const Providers: FC<PropsWithChildren> = ({ children }) => {
   if (!mounted) return null;
 
   return (
-    <WagmiProvider config={clientConfig}>
-      <QueryClientProvider client={queryClient}>
-        <ConnectKitProvider>{children}</ConnectKitProvider>
-      </QueryClientProvider>
-    </WagmiProvider>
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="dark"
+      disableTransitionOnChange
+    >
+      <WagmiProvider config={clientConfig}>
+        <QueryClientProvider client={queryClient}>
+          <ConnectKitProvider>{children}</ConnectKitProvider>
+        </QueryClientProvider>
+      </WagmiProvider>
+    </ThemeProvider>
   );
 };
 
