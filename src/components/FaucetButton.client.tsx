@@ -14,12 +14,16 @@ const FaucetButton = () => {
       address: MockUSDC.address,
       abi: MockUSDC.abi,
       functionName: "faucet",
-      args: [address],
+      args: [address!],
     });
   };
 
   return (
-    <Button onClick={handleFaucet} disabled={isPending || !address}>
+    <Button
+      variant="secondary"
+      onClick={handleFaucet}
+      disabled={isPending || !address}
+    >
       {isPending ? (
         <>
           <Loader2 className="mr-2 h-4 w-4 animate-spin" />

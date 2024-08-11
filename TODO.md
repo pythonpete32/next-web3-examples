@@ -5,10 +5,11 @@
 - [x] create home page
 - [x] faucet component 
 - [x] refactor to have a new page for each set of examples
-- [ ] level1. basic readContract client and server
+- [x] level1. basic readContract client and server
 - [ ] level2. readContract with inital data from server component
     prefetch on the server and hydrate on the client 
     - solves the problem of the client not having the data on the first render
     - but now we are passing props which can get ugly with prop drilling 
 - [ ] level3. create a hydration boundary
     - solves the problem of prop drilling
+- [ ] write article explaining the above
