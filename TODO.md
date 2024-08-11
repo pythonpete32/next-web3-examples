@@ -1,6 +1,7 @@
 - [x] deploy & verify token on sepolia with faucet built in
 - [x] add config for token to project
-- [ ] add shadcn
+- [x] add shadcn
+- [ ] refactor to use connect kit
 - [ ] faucet component 
 - [ ] refactor to have a new page for each set of examples
 - [ ] level1. basic readContract client and server
