@@ -1,5 +1,5 @@
-- [ ] deploy & verify token on sepolia with faucet built in
-- [ ] add config for token to project
+- [x] deploy & verify token on sepolia with faucet built in
+- [x] add config for token to project
 - [ ] add shadcn
 - [ ] faucet component 
 - [ ] refactor to have a new page for each set of examples
