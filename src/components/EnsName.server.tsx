@@ -1,4 +1,4 @@
-import { serverConfig } from "@/lib/wagmi/wagmi.server";
+import { serverConfig } from "@/config/wagmi/wagmi.server";
 import { getEnsName } from "wagmi/actions";
 
 async function getEnsNameServer(address: `0x${string}`) {

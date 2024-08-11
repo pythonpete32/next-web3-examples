@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { ConnectKitButton } from "connectkit";
 
 export default function TopNav() {
   return (
@@ -16,7 +16,7 @@ export default function TopNav() {
           </div>
 
           <div className="flex items-center">
-            <ConnectButton />
+            <ConnectKitButton />
           </div>
         </div>
       </div>
