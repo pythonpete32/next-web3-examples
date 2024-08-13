@@ -3,7 +3,6 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import Providers from "./Providers";
 import "@rainbow-me/rainbowkit/styles.css";
-import TopNav from "@/components/TopNav.client";
 import { cn } from "@/lib/utils";
 
 const fontSans = FontSans({
