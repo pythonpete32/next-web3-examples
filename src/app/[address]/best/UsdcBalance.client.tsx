@@ -5,7 +5,11 @@ import { formatToken } from "@/lib/formatToken";
 import React from "react";
 import { useAccount, useReadContract } from "wagmi";
 
-export default function UsdcBalanceClient() {
+type Props = {
+  initialBalance: bigint;
+};
+
+export default function UsdcBalanceClient({ initialBalance }: Props) {
   const account = useAccount();
 
   const {
@@ -20,6 +24,7 @@ export default function UsdcBalanceClient() {
     query: {
       enabled: !!account.address,
       refetchInterval: 5000, // refresh after 5 seconds
+      initialData: initialBalance,
     },
   });
 
